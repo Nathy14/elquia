@@ -74,9 +74,6 @@ def run():
 
     print("Digite ajuda se precisar de ajuda.")
     print("O que você faz agora? ")
-    ajuda(comandos)
-
-    print("\nO reino de Élquia tem como público-alvo qualquer um que saiba ler.")
 
     # O jogador começa nos esgotos.
     jogador['sala_atual'] = salas['esgotos']
