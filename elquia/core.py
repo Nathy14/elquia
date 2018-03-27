@@ -432,7 +432,3 @@ def run():
         print("Você é agora o {} de Élquia".format(nomeacao))
         time.sleep(2.5)
         fechamento()
-
-
-if __name__ == '__main__':
-    run()
