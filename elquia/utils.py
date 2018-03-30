@@ -249,6 +249,8 @@ def procurar_itens(sala):
     try:
         for item in sala['itens']:
             print("{}".format(item['nome']))
+        if len(sala['items']) == 0:
+            print("Sem itens aqui!")
     except:
         print("Sem itens aqui!")
 

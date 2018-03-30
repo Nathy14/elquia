@@ -291,6 +291,7 @@ salas = {
             assustados no fundo da sala choramingando em um canto
         ''',
         'itens': [itens['pocao_de_vida'], itens['pocao_de_mana']],
+        'reator': 'ativado'
     },
     "sala_armas_cientificas": {
         'nome': "Sala de armas científicas",

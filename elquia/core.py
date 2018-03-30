@@ -402,12 +402,14 @@ def run():
                 print("Nada para escalar aqui.")
 
         elif escolha.startswith("chutar") or escolha == "desativar reator":
-            if jogador['sala_atual']['nome'] == "Base do núcleo térmico":
+            if (jogador['sala_atual']['nome'] == "Base do núcleo térmico" and
+                jogador['sala_atual']['reator'] == 'ativado'):
                 if escolha.startswith("chutar"):
                     print('''
                         Você se prepara e começar a chutar contra o reator, ele
                         então toma um surto de energia e causa uma grande explosão!
                     ''')
+                    jogador['sala_atual']['reator'] = 'desativado'
                 else:
                     print('''
                         Você se aproxima do reator e vê alguns paineis de controle,
@@ -417,6 +419,9 @@ def run():
                         parece que ele.. desativou? A sala então, fica
                         completamente no escuro.
                     ''')
+                    jogador['sala_atual']['reator'] = 'desativado'
+            else:
+                print("Nada para fazer")
 
         elif escolha == "sair":
             print("Saindo...\n")
