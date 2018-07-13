@@ -16,15 +16,13 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 """
 
-import os
 import time
-import random
 import pygame
 
 from utils import (
     abertura, fechamento, escolha_da_classe, pegar, ver_inventario,
     ver_estatistica, criar_jogador, ajuda, ver_sala, ir_para_sala,
-    ver_direcao, batalha, procurar_itens, equipar_item, ver_npcs,
+    ver_direcao, batalha, equipar_item, ver_npcs,
     ver_item, procurar_itens, DIRETORIO_ROOT
 )
 

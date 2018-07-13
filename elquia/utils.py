@@ -26,6 +26,7 @@ from salas import salas
 
 DIRETORIO_ROOT = os.path.dirname(os.path.abspath(__file__))
 
+
 def abertura():
     """Imprime o texto de abertura. """
     columns = os.get_terminal_size().columns
